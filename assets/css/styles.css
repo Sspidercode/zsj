@@ -1,0 +1,111 @@
+/* Dark theme palette and utilities */
+:root{
+  --dark-900:#121212;
+  --dark-850:#161616;
+  --dark-800:#1c1c1c;
+  --dark-750:#232323;
+  --dark-700:#2a2a2a;
+  --text-100:#eaeaea;
+  --text-200:#cfcfcf;
+  --accent-500:#e0ab8f; /* warm peach */
+  --accent-600:#d6997a;
+  --accent-900:#2b2421; /* strip background */
+}
+
+html,body{height:100%;font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";}
+.bg-dark-900{background:var(--dark-900)!important}
+.bg-dark-850{background:var(--dark-850)!important}
+.bg-dark-800{background:var(--dark-800)!important}
+.bg-dark-700{background:var(--dark-700)!important}
+.bg-gradient-template{background-image:linear-gradient(160deg, var(--dark-900) 0%, var(--dark-850) 45%, var(--accent-900) 100%)!important;background-attachment:fixed}
+.bg-mandala{
+  background-attachment:fixed;
+  background-image:
+    linear-gradient(160deg, var(--dark-900) 0%, var(--dark-850) 45%, var(--accent-900) 100%),
+    radial-gradient(closest-side, rgba(224,171,143,.05), rgba(224,171,143,.02) 45%, rgba(224,171,143,0) 70%),
+    repeating-conic-gradient(from 0deg, rgba(224,171,143,.04) 0deg 10deg, rgba(224,171,143,0) 10deg 20deg);
+  background-size: auto, 900px 900px, 420px 420px;
+  background-position: 50% 20%, 50% 20%, 50% 20%;
+}
+.border-dark-700{border-color:var(--dark-700)!important}
+.text-light{color:var(--text-100)!important}
+.text-secondary{color:var(--text-200)!important}
+
+.bg-accent-900{background:var(--accent-900)!important}
+.text-accent-500{color:var(--accent-500)!important}
+.bg-accent-500{background:var(--accent-500)!important;border-color:var(--accent-500)!important}
+.btn-accent{--bs-btn-bg:var(--accent-500);--bs-btn-border-color:var(--accent-500);--bs-btn-hover-bg:var(--accent-600);--bs-btn-hover-border-color:var(--accent-600);--bs-btn-color:#1a1a1a}
+
+.py-6{padding-top:4rem;padding-bottom:4rem}
+.pb-6{padding-bottom:4rem}
+
+/* Topbar */
+.topbar .brand-dot{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--accent-500)}
+.icon-hover:hover{color:var(--text-100)!important}
+
+/* Header styling to match reference */
+.navbar .brand-dot{width:16px;height:16px;border-radius:50%;display:inline-block;background:var(--accent-500)}
+.brand-text{font-weight:600;color:var(--text-100)}
+.header-menu .nav-link{color:var(--text-200);font-size:.86rem}
+.header-menu .nav-link.active,.header-menu .nav-link:hover{color:var(--text-100)}
+
+/* Hero */
+.hero .hero-slide{min-height:62vh;background:linear-gradient(90deg, rgba(18,18,18,0.85), rgba(18,18,18,0.5)), url('../images/slider1.jpg') center/cover no-repeat}
+.hero .hero-slide-2{background-image:linear-gradient(90deg, rgba(18,18,18,0.85), rgba(18,18,18,0.5)), url('../images/img1.jpg')}
+
+/* Feature strip */
+.features-strip{background:var(--accent-900)}
+
+/* Product grid helpers */
+.ratio>img{width:100%;height:100%;display:block}
+.product-card .ratio{background:var(--dark-700);border-bottom:1px solid var(--dark-700)}
+.object-fit-cover{object-fit:cover}
+.product-card{transition:transform .25s ease, box-shadow .25s ease}
+.product-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.product-card.card{border-radius:14px;overflow:hidden}
+.product-scroll{flex-wrap:nowrap;overflow-x:auto;scroll-behavior:smooth}
+.product-scroll>.col-6{min-width:66%}
+@media (min-width:768px){.product-scroll>.col-md-4{min-width:33.3333%}}
+@media (min-width:992px){.product-scroll>.col-lg-3{min-width:25%}}
+@media (min-width:1200px){.product-scroll>.col-xl-2-4{min-width:20%}}
+
+/* custom col for 5-up on xl */
+@media (min-width:1200px){
+  .col-xl-2-4{flex:0 0 auto;width:20%}
+}
+
+/* Promo cards */
+.promo-card{position:relative}
+.promo-overlay{position:absolute;inset:0;background:linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.05));display:flex;flex-direction:column;justify-content:center;color:var(--text-100)}
+.promo-tall{background:url('../images/img6.webp') center/cover no-repeat; min-height:100%}
+
+footer{color:var(--text-200)}
+
+/* Rich footer */
+.footer-widgets{background:var(--accent-500);color:#fff}
+.footer-widgets h6{color:#fff;margin-bottom:0.75rem;letter-spacing:.04em}
+.footer-widgets .footer-link{color:rgba(255,255,255,.9);text-decoration:none}
+.footer-widgets .footer-link:hover{color:#fff;text-decoration:underline}
+.footer-widgets .footer-list{margin:0;padding:0}
+.footer-widgets .footer-list li{margin:.35rem 0}
+
+/* Reviews */
+.review-card{border-radius:12px}
+.review-card .avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.stars i{color:#f3c96a;margin-right:2px}
+
+/* Brand scroller */
+.brand-scroller{overflow:hidden}
+.brand-track{display:flex;gap:2.5rem;animation:scroll-x 28s linear infinite;white-space:nowrap}
+.brand-item{display:flex;align-items:center;justify-content:center;min-width:140px}
+.brand-logo{height:36px;max-width:140px;object-fit:contain;filter:grayscale(100%) contrast(1.1) opacity(.75);transition:filter .2s ease, transform .2s ease}
+.brand-logo:hover{filter:none;transform:scale(1.05)}
+
+/* Articles */
+.article-card{transition:transform .25s ease, box-shadow .25s ease;border-radius:14px;overflow:hidden}
+.article-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.link-accent{color:var(--accent-500);text-decoration:none}
+.link-accent:hover{color:var(--accent-600);text-decoration:underline}
+@keyframes scroll-x{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+

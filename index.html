@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Divine - Jewellery Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bg-mandala text-light">
+    <!-- Header / Navbar (container-fluid) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-900 sticky-top border-bottom border-dark-700 py-2">
+        <div class="container-fluid px-3 px-md-4">
+            <div class="d-flex align-items-center gap-3">
+                <a class="navbar-brand d-flex align-items-center gap-2 m-0" href="index.html">
+                    <img src="./assets/images/logo.jpg" alt="logo" class="img-fluid" style="width: 40px; height: 40px;border-radius: 100%;">
+                    <span class="brand-text">Zeba Stylish Jewellery</span>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                 <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4 header-menu">
+                     <li class="nav-item"><a class="nav-link" href="earrings.html">Earrings</a></li>
+                     <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                     <li class="nav-item"><a class="nav-link" href="rings.html">Rings</a></li>
+                     <li class="nav-item"><a class="nav-link" href="bracelets.html">Bracelets</a></li>
+                     <li class="nav-item"><a class="nav-link" href="diamond.html">Diamond</a></li>
+                     <li class="nav-item"><a class="nav-link" href="designers.html">Designers</a></li>
+                </ul>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+                <a class="text-secondary icon-hover" href="#" data-bs-toggle="tooltip" data-bs-title="Search"><i
+                        class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="text-secondary icon-hover" href="#" data-bs-toggle="tooltip" data-bs-title="Wishlist"><i
+                        class="fa-regular fa-heart"></i></a>
+                <a class="text-secondary icon-hover position-relative" href="#" data-bs-toggle="tooltip"
+                    data-bs-title="Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span
+                        class="badge rounded-pill bg-accent-500 position-absolute top-0 start-100 translate-middle p-1">2</span>
+                </a>
+                <a class="text-secondary icon-hover" href="#" data-bs-toggle="tooltip" data-bs-title="Account"><i
+                        class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-slide d-flex align-items-center">
+                        <div class="container">
+                            <div class="col-12 col-lg-7">
+                                <h1 class="display-5 fw-bold mb-3">Great Discounts on</h1>
+                                <p class="lead text-secondary mb-4">Silver Jewellery Up to 50% Off</p>
+                                <a href="#" class="btn btn-accent btn-lg">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide hero-slide-2 d-flex align-items-center">
+                        <div class="container">
+                            <div class="col-12 col-lg-7">
+                                <h1 class="display-5 fw-bold mb-3">Gold Ring Collection</h1>
+                                <p class="lead text-secondary mb-4">New arrivals crafted to perfection</p>
+                                <a href="#" class="btn btn-accent btn-lg">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Feature strip -->
+    <section class="features-strip py-4 bg-accent-900 text-light">
+        <div class="container">
+            <div class="row g-3 g-md-4 text-center text-md-start">
+                <div
+                    class="col-6 col-md-3 d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <i class="fa-solid fa-truck-fast text-accent-500 fs-4"></i>
+                    <div>
+                        <div class="fw-semibold">Free Shipping Worldwide</div>
+                        <small class="text-secondary">On orders over 100$</small>
+                    </div>
+                </div>
+                <div
+                    class="col-6 col-md-3 d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <i class="fa-solid fa-gift text-accent-500 fs-4"></i>
+                    <div>
+                        <div class="fw-semibold">Special Gift</div>
+                        <small class="text-secondary">Special gift for new member</small>
+                    </div>
+                </div>
+                <div
+                    class="col-6 col-md-3 d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <i class="fa-solid fa-headset text-accent-500 fs-4"></i>
+                    <div>
+                        <div class="fw-semibold">Support Online 24/7</div>
+                        <small class="text-secondary">Call (032) 259 772 594</small>
+                    </div>
+                </div>
+                <div
+                    class="col-6 col-md-3 d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
+                    <i class="fa-solid fa-shield-halved text-accent-500 fs-4"></i>
+                    <div>
+                        <div class="fw-semibold">Security Payment</div>
+                        <small class="text-secondary">Various secure payment flows</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <!-- Featured Products -->
+    <section class="py-6">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="h4 m-0">Featured Products</h2>
+                <div class="d-none d-md-flex gap-2">
+                    <button class="btn btn-sm btn-outline-secondary rounded-circle product-prev" aria-label="prev"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <button class="btn btn-sm btn-outline-secondary rounded-circle product-next" aria-label="next"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="row g-4 product-scroll" id="featuredGrid">
+                <!-- Product Card 1 -->
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2-4">
+                    <div class="product-card card h-100 bg-dark-800 border-0">
+                        <span class="badge bg-success position-absolute m-3">New</span>
+                        <div class="ratio ratio-1x1 bg-dark-700">
+                             <img src="./assets/images/img1.jpg" class="object-fit-cover" alt="Ring" />
+                        </div>
+                        <div class="card-body text-center py-3">
+                            <div class="small text-secondary">Red Stone Ring</div>
+                            <div class="d-flex align-items-baseline gap-2">
+                                <div class="fw-semibold">₹2,151</div>
+                                <small class="text-decoration-line-through text-secondary">₹2,689</small>
+                            </div>
+                            <a class="stretched-link" href="product.html" aria-label="View product"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2-4">
+                    <div class="product-card card h-100 bg-dark-800 border-0">
+                        <span class="badge bg-success position-absolute m-3">New</span>
+                        <div class="ratio ratio-1x1 bg-dark-700">
+                             <img src="./assets/images/img2.webp" class="object-fit-cover" alt="Ring" />
+                        </div>
+                        <div class="card-body text-center py-3">
+                            <div class="small text-secondary">Gold Signet</div>
+                            <div class="fw-semibold">₹4,039</div>
+                            <a class="stretched-link" href="product.html" aria-label="View product"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2-4">
+                    <div class="product-card card h-100 bg-dark-800 border-0">
+                        <span class="badge bg-success position-absolute m-3">New</span>
+                        <div class="ratio ratio-1x1 bg-dark-700">
+                             <img src="./assets/images/img3.webp" class="object-fit-cover" alt="Bracelet" />
+                        </div>
+                        <div class="card-body text-center py-3">
+                            <div class="small text-secondary">Gold Plated Bracelets</div>
+                            <div class="d-flex align-items-baseline gap-2">
+                                <div class="fw-semibold">₹2,936</div>
+                                <small class="text-secondary">-10% <span
+                                        class="text-decoration-line-through">₹3,263</span></small>
+                            </div>
+                            <a class="stretched-link" href="product.html" aria-label="View product"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2-4">
+                    <div class="product-card card h-100 bg-dark-800 border-0">
+                        <span class="badge bg-success position-absolute m-3">New</span>
+                        <div class="ratio ratio-1x1 bg-dark-700">
+                             <img src="./assets/images/img4.webp" class="object-fit-cover" alt="Ring spiral" />
+                        </div>
+                        <div class="card-body text-center py-3">
+                            <div class="small text-secondary">Black Stone Bracelet</div>
+                            <div class="fw-semibold">₹3,263</div>
+                            <a class="stretched-link" href="product.html" aria-label="View product"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2-4">
+                    <div class="product-card card h-100 bg-dark-800 border-0">
+                        <span class="badge bg-success position-absolute m-3">New</span>
+                        <div class="ratio ratio-1x1 bg-dark-700">
+                             <img src="./assets/images/img5.webp" class="object-fit-cover" alt="Bracelet" />
+                        </div>
+                        <div class="card-body text-center py-3">
+                            <div class="small text-secondary">Dark Bracelet</div>
+                            <div class="d-flex align-items-baseline gap-2">
+                                <div class="fw-semibold">₹2,773</div>
+                                <small class="text-secondary">-15% <span
+                                        class="text-decoration-line-through">₹3,263</span></small>
+                            </div>
+                            <a class="stretched-link" href="product.html" aria-label="View product"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banners -->
+    <section class="pb-6">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="row g-4 h-100">
+                        <div class="col-12">
+                            <div class="promo-card ratio ratio-21x9 overflow-hidden rounded-3">
+                                <img class="object-fit-cover" src="./assets/images/slider1.jpg" alt="Necklace" />
+                                <div class="promo-overlay p-4 p-md-5">
+                                    <h3 class="h4 fw-bold">Great deals with<br />Silver Necklaces</h3>
+                                    <a href="#" class="btn btn-accent btn-sm mt-2">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="promo-card ratio ratio-21x9 overflow-hidden rounded-3">
+                                <img class="object-fit-cover" src="./assets/images/img6.webp" alt="Gold ring" />
+                                <div class="promo-overlay p-4 p-md-5">
+                                    <h3 class="h2 fw-bold">Gold Ring Jewelry</h3>
+                                    <p class="mb-4">Up to 50% OFF</p>
+                                    <a href="#" class="btn btn-accent">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+          <div class="col-lg-6 d-flex">
+            <div class="promo-card promo-tall overflow-hidden rounded-3 w-100 d-flex align-items-center justify-content-center text-center h-100">
+              <div class="promo-overlay p-4 p-md-5">
+                <h3 class="h3 fw-bold">Handmade jewellery</h3>
+                <p class="mb-4">Up To 30% OFF</p>
+                <a href="#" class="btn btn-accent">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+            </div>
+        </div>
+    </section>
+
+      <!-- Brand scroller -->
+       <section class="brand-scroller py-4 border-top border-dark-700 border-bottom bg-dark-900">
+         <div class="container">
+             <div class="brand-track">
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img1.jpg" alt="Brand 1" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img2.webp" alt="Brand 2" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img3.webp" alt="Brand 3" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img4.webp" alt="Brand 4" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img5.webp" alt="Brand 5" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img6.webp" alt="Brand 6" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/slider1.jpg" alt="Brand 7" /></div>
+                 <!-- duplicate for seamless loop -->
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img1.jpg" alt="Brand 1" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img2.webp" alt="Brand 2" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img3.webp" alt="Brand 3" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img4.webp" alt="Brand 4" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img5.webp" alt="Brand 5" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/img6.webp" alt="Brand 6" /></div>
+                 <div class="brand-item"><img class="brand-logo" src="./assets/images/slider1.jpg" alt="Brand 7" /></div>
+             </div>
+         </div>
+     </section>
+
+     <!-- Latest Articles -->
+     <section class="py-6">
+         <div class="container">
+             <div class="d-flex justify-content-between align-items-center mb-4">
+                 <h2 class="h4 m-0">Latest Articles</h2>
+                 <a href="#" class="btn btn-sm btn-outline-secondary">View all</a>
+             </div>
+             <div class="row g-4">
+                 <div class="col-md-6 col-lg-4">
+                     <article class="article-card card bg-dark-800 border-0 h-100">
+                         <div class="ratio ratio-16x9">
+                             <img class="object-fit-cover" src="./assets/images/slider1.jpg" alt="How to choose the perfect ring size" />
+                         </div>
+                         <div class="card-body">
+                             <div class="article-meta small text-secondary mb-2">Editorial • Oct 2025</div>
+                             <h3 class="h6 article-title mb-2">How to choose the perfect ring size</h3>
+                             <p class="text-secondary mb-3">A quick guide to measure and pick the right fit.</p>
+                             <a class="link-accent fw-semibold" href="#">Read more</a>
+                         </div>
+                     </article>
+                 </div>
+                 <div class="col-md-6 col-lg-4">
+                     <article class="article-card card bg-dark-800 border-0 h-100">
+                         <div class="ratio ratio-16x9">
+                             <img class="object-fit-cover" src="./assets/images/img3.webp" alt="Caring for silver jewellery" />
+                         </div>
+                         <div class="card-body">
+                             <div class="article-meta small text-secondary mb-2">Tips • Oct 2025</div>
+                             <h3 class="h6 article-title mb-2">Caring for silver jewellery</h3>
+                             <p class="text-secondary mb-3">Keep your pieces shining with these simple steps.</p>
+                             <a class="link-accent fw-semibold" href="#">Read more</a>
+                         </div>
+                     </article>
+                 </div>
+                 <div class="col-md-6 col-lg-4">
+                     <article class="article-card card bg-dark-800 border-0 h-100">
+                         <div class="ratio ratio-16x9">
+                             <img class="object-fit-cover" src="./assets/images/img6.webp" alt="Top necklace trends this season" />
+                         </div>
+                         <div class="card-body">
+                             <div class="article-meta small text-secondary mb-2">Trends • Oct 2025</div>
+                             <h3 class="h6 article-title mb-2">Top necklace trends this season</h3>
+                             <p class="text-secondary mb-3">Discover what’s hot and how to style it.</p>
+                             <a class="link-accent fw-semibold" href="#">Read more</a>
+                         </div>
+                     </article>
+                 </div>
+             </div>
+         </div>
+     </section>
+
+
+     <!-- Customer Reviews -->
+     <section class="py-6 bg-dark-850 border-top border-dark-700 border-bottom">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="h4 m-0">Customer Reviews</h2>
+                <div class="d-none d-md-flex gap-2">
+                    <button class="btn btn-sm btn-outline-secondary rounded-circle" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev" aria-label="prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary rounded-circle" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next" aria-label="next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="review-card card bg-dark-800 border-0 h-100 p-3">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="avatar bg-accent-500 text-dark fw-semibold">A</div>
+                                        <div>
+                                            <div class="fw-semibold">Ananya</div>
+                                            <div class="stars" aria-label="5 stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-secondary m-0">Beautiful craftsmanship! The ring exceeded my expectations and shipping was quick.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="review-card card bg-dark-800 border-0 h-100 p-3">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="avatar bg-accent-500 text-dark fw-semibold">R</div>
+                                        <div>
+                                            <div class="fw-semibold">Rahul</div>
+                                            <div class="stars" aria-label="4 stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-secondary m-0">Loved the bracelet quality and packaging. Will buy again.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                                <div class="review-card card bg-dark-800 border-0 h-100 p-3">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="avatar bg-accent-500 text-dark fw-semibold">S</div>
+                                        <div>
+                                            <div class="fw-semibold">Simran</div>
+                                            <div class="stars" aria-label="5 stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-secondary m-0">Necklace looks exactly like the photos. The finish is premium.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="review-card card bg-dark-800 border-0 h-100 p-3">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="avatar bg-accent-500 text-dark fw-semibold">M</div>
+                                        <div>
+                                            <div class="fw-semibold">Meera</div>
+                                            <div class="stars" aria-label="4 stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-secondary m-0">Great support and quick response. Sizing guide was helpful.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="review-card card bg-dark-800 border-0 h-100 p-3">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="avatar bg-accent-500 text-dark fw-semibold">K</div>
+                                        <div>
+                                            <div class="fw-semibold">Karan</div>
+                                            <div class="stars" aria-label="5 stars">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="text-secondary m-0">Value for money and beautiful designs. Highly recommend!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-widgets py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <h6 class="text-uppercase fw-semibold">Store Locations</h6>
+                    <ul class="footer-list list-unstyled small">
+                        <li><a class="footer-link" href="#">Paris</a></li>
+                        <li><a class="footer-link" href="#">Nepal</a></li>
+                        <li><a class="footer-link" href="#">London</a></li>
+                        <li><a class="footer-link" href="#">Bangkok</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6 class="text-uppercase fw-semibold">More About Store</h6>
+                    <ul class="footer-list list-unstyled small">
+                        <li><a class="footer-link" href="#">Multiple Branches</a></li>
+                        <li><a class="footer-link" href="#">Take Franchise</a></li>
+                        <li><a class="footer-link" href="#">Scheduled Offers</a></li>
+                        <li><a class="footer-link" href="#">FAQ</a></li>
+                        <li><a class="footer-link" href="#">More Links</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6 class="text-uppercase fw-semibold">Key Links</h6>
+                    <ul class="footer-list list-unstyled small">
+                        <li><a class="footer-link" href="#">Order</a></li>
+                        <li><a class="footer-link" href="#">Download</a></li>
+                        <li><a class="footer-link" href="#">Address</a></li>
+                        <li><a class="footer-link" href="#">Logout</a></li>
+                        <li><a class="footer-link" href="#">Lost Password</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h6 class="text-uppercase fw-semibold">Contact Details</h6>
+                    <ul class="footer-list list-unstyled small">
+                        <li>Address: 3548 Columbia Mine Road,<br/>Wheeling, West Virginia, 26003</li>
+                        <li>Contact: 304-559-3023, 304-850-2694</li>
+                        <li>E-mail: shopnow@open2.com</li>
+                        <li>contact@open2.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4 bg-dark-900">
+        <div class="container text-center text-secondary small">© <span id="year"></span> Divine. All rights reserved.</div>
+    </footer>
+
+    <!-- jQuery (requested) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
