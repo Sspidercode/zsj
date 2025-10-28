@@ -45,7 +45,7 @@ html,body{height:100%;font-family:'Poppins',system-ui,-apple-system,Segoe UI,Rob
 
 /* Header styling to match reference */
 .navbar .brand-dot{width:16px;height:16px;border-radius:50%;display:inline-block;background:var(--accent-500)}
-.brand-text{font-weight:600;color:var(--text-100)}
+.brand-text{font-weight:600;color:var(--text-100);font-size: 16px;}
 .header-menu .nav-link{color:var(--text-200);font-size:.86rem}
 .header-menu .nav-link.active,.header-menu .nav-link:hover{color:var(--text-100)}
 
